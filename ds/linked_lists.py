@@ -1,6 +1,6 @@
 class Node:
-    def __init__(self, item):
-        self.data = item
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
 
@@ -9,7 +9,6 @@ class LinkedList:
         self.nodeCount = 0
         self.head = Node(None)
         self.tail = None
-        self.head.next = self.tail
 
     # get a node by a particular index
     def getAt(self, pos):
