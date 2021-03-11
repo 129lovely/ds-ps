@@ -1,0 +1,12 @@
+{
+  "editor.fontFamily": "'Dejavu Sans Mono'",
+  "editor.fontSize": 13,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnPaste": false
+  },
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "120"]
+}
