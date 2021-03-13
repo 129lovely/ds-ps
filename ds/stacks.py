@@ -24,7 +24,7 @@ class ArrayStack:
 
 class DoublyLinkedListStack:
     def __init__(self):
-        self.data = DoublyLinkedListStack()
+        self.data = DoublyLinkedList()
 
     def size(self):
         return self.data.nodeCount
@@ -33,10 +33,11 @@ class DoublyLinkedListStack:
         return self.size() == 0
 
     def push(self, item):
-        pass
+        newNode = Node(item)
+        self.data.insertAt(self.size() + 1, newNode)
 
     def pop(self):
-        pass
+        return self.data.popAt(self.size())
 
     def peek(self):
-        pass
+        return self.data.getAt(self.size()).data
